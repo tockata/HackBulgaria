@@ -39,7 +39,7 @@ print("Total price: {}\n".format(sum))
 # what is total books count:
 print("Total books count: {}\n".format(len(book_dictionary)))
 
-# if a one byus Introduction to Algoritims and Concrete Mathematics he gets 25% discount.
+# if one byus Introduction to Algoritims and Concrete Mathematics he gets 25% discount.
 # What will be the price?
 price_after_discount = book7_price * 0.75 + book8_price * 0.75
 print("Price after discount: {}\n".format(price_after_discount))
