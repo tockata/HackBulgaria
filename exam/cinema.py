@@ -30,8 +30,7 @@ def order_of_seats(cinema):
         col = find_col(row - 1, cinema)
 
         if col != -1:
-            seat = ["(" + str(row) + ", " + str(col) + ")"]
-            result_list += seat
+            result_list += [(row, col)]
             cinema[row - 1][col - 1] = 1
         else:
             break

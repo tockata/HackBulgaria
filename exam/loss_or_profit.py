@@ -10,12 +10,12 @@ def loss_or_profit(income, outcome):
 
     result = total_income - total_outcome
     if result > 0:
-        print("+" + str(result))
+        return ("+" + str(result))
     elif result == 0:
-        print("=0")
+        return ("=0")
     else:
-        print(result)
+        return str(result)
 
-loss_or_profit([1, 2, 3], [3])
-loss_or_profit([10], [20, 30])
-loss_or_profit([10], [10])
+print(loss_or_profit([1, 2, 3], [3]))
+print(loss_or_profit([10], [20, 30]))
+print(loss_or_profit([10], [10]))

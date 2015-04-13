@@ -1,24 +1,21 @@
 def second_largest(numbers):
     if len(numbers) < 2:
-        print(False)
-        return
+        return False
 
     sorted_numbers = sorted(numbers)
     index = len(sorted_numbers) - 1
 
     while index > 0:
         if sorted_numbers[index] != sorted_numbers[index - 1]:
-            print(sorted_numbers[index - 1])
-            return
+            return sorted_numbers[index - 1]
 
         index -= 1
 
-    print(False)
-    return
+    return False
 
 
-second_largest([])
-second_largest([2, 1])
-second_largest([5, 5])
-second_largest([100, 100, 90])
-second_largest([4, 5, 13, 50, -50, -10])
+print(second_largest([]))
+print(second_largest([2, 1]))
+print(second_largest([5, 5]))
+print(second_largest([100, 100, 90]))
+print(second_largest([4, 5, 13, 50, -50, -10]))
